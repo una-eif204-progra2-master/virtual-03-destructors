@@ -16,9 +16,12 @@
 #include <iostream>  // allows program to output data to the screen
 
 struct Base {
-  ~Base() {
+  virtual ~Base() {
     std::cout << "~Base()\n";
   }
+  /*~Base() {
+    std::cout << "~Base()\n";
+  }*/
 };
 
 struct Derived : Base {
